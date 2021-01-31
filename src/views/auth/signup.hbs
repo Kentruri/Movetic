@@ -1,0 +1,229 @@
+<link rel="stylesheet" href="css/images.css">
+
+<div class="content">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 contents">
+                <h3>Registrate</h3>
+                <p class="mb-4">Registrate en nuestra pagina que no hace ni mierda!</p>
+                <form  method="POST">
+                    <div class="row pb-3">
+                        <div class="col-md-6">
+                            <div class="form-group first mb-3">
+                                <label for="fname">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group first mb-3">
+                                <label for="lname">Nombre de usuario</label>
+                                <input type="text" class="form-control" id="username" name="username">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col-md-12">
+                            <div class="form-group first mb-3">
+                                <label for="email">Correo electronico</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col-md-6">
+                            <div class="form-group first mb-3">
+                                <label for="lname">Numero de celular</label>
+                                <input type="text" class="form-control" id="numcel" name="numcel">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group first mb-3">
+                                <label for="lname">Direccion</label>
+                                <input type="text" class="form-control" id="address" name="address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group last mb-3">
+                                <label for="password">Contraseña</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="form-group last mb-3">
+                                <label for="re-password">Repite tu contraseña</label>
+                                <input type="password" class="form-control" id="re-password" name="re-password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="containerDos pt-2 pb-5">
+                        <div class="carta">
+
+                            <img id="img-preview">
+                            <div class="carta-footer">
+                                <label for="imgUploader" >Foto de perfil</label>
+                                <input type="file" id="imgUploader" >
+                                 <input type="hidden" id="direccion" name="fotoPerfil" value="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcincodias.elpais.com%2Fcincodias%2F2016%2F07%2F04%2Flifestyle%2F1467646262_522853.html&psig=AOvVaw387juusIZvBqIncwGKiJU_&ust=1612134382838000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCq5dzixO4CFQAAAAAdAAAAABAD">
+                                <progress value="0" max="100" id="img-upload-bar"></progress>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex  align-items-center">
+                        <div class="d-flex align-items-center">
+                            <label class="control control--checkbox mb-2"><span class="caption">Aceptar <a
+                                        href="#">Terminos y condiciones</span></a>
+                                <input type="checkbox" checked="checked" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mt-auto mb-auto">
+                           <input type="submit" value="Registrarse" class="btn px-5 btn-primary">
+                        </div>
+
+                        <div class="col-md-4 ml-auto">
+                            <span class="text-left my-2 text-muted d-block">ㅤ&mdash;O Registrate con &mdash;</span>
+
+                            <div class="social-login">
+                                <a href="#" class="facebook">
+                                    <span class="icon-facebook mr-3"></span>
+                                </a>
+                                <a href="#" class="twitter">
+                                    <span class="icon-twitter mr-3"></span>
+                                </a>
+                                <a href="#" class="google">
+                                    <span class="icon-google mr-3"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="card">
+        </div>
+    </div>
+
+
+
+
+    <style>
+        .containerDos {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .containerDos img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 80%;
+            border-color: #fff;
+
+                    }
+
+        .carta {
+            border: 1px solid #fff;
+            border-radius: 10px !important;
+            height: 30rem;
+            width: 20rem;
+            position: relative;
+        }
+
+        .carta-footer {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0;
+            text-align: center;
+
+
+
+        }
+
+        input[type=file]#imgUploader {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+
+        label[for="imgUploader"] {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background-color: rgb(14, 14, 109);
+            display: inline-block;
+            transition: all .5s;
+            cursor: pointer;
+            padding: 8px 30px !important;
+            text-transform: uppercase;
+            width: fit-content;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+
+        const imgProgress = document.getElementById('img-upload-bar')
+
+        const imagePreview = document.getElementById('img-preview');
+
+        const imageUploader = document.getElementById('imgUploader');
+
+        const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/kentruri/image/upload';
+
+        const CLOUDINARY_PRESET = 'he9eudrz';
+        imageUploader.addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('upload_preset', CLOUDINARY_PRESET)
+            const res = await axios.post(CLOUDINARY_URL, formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                },
+                onUploadProgress(e) {
+                    const progress = (e.loaded * 100) / e.total;
+                    imgProgress.setAttribute('value', progress)
+                }
+            });
+
+            imagePreview.src = res.data.secure_url;
+            document.getElementById('direccion').value = res.data.secure_url;
+
+
+        });
+
+    </script>
