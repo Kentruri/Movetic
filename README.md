@@ -1,5 +1,5 @@
 # Practica
-
+### Es un proyecto en el que busco realizar el proceso de login y registro de usuarios usando mysql
 ## Build Setup
 
 ```bash
